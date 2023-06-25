@@ -1,1 +1,1 @@
-# cjh_sequence_game_server
+# sequence_game_server
