@@ -4,15 +4,15 @@ import (
 	pb "sequence_game_server/api/v1/test2"
 	dbInstance "sequence_game_server/core/db"
 	grpcServer "sequence_game_server/pkg"
-	testRepository "sequence_game_server/pkg/test2/repository"
-	testUsecase "sequence_game_server/pkg/test2/usecase"
+	test2Repository "sequence_game_server/pkg/test2/repository"
+	test2Usecase "sequence_game_server/pkg/test2/usecase"
 )
 
 func InitService(db *dbInstance.PostgresDB) {
 	// DB와 연결된 repository 생성
-	repo := testRepository.NewRepository(db)
+	repo := test2Repository.NewRepository(db)
 
 	// 서비스 생성 및 서버에 등록
-	testService := testUsecase.NewTestService(repo)
+	testService := test2Usecase.NewTestService(repo)
 	pb.RegisterTest2ServiceServer(grpcServer.GrpcServer, testService)
 }
