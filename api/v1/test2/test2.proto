@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package test2;
+
+option go_package = "./;test2";
+
+service Test2Service {
+  rpc Test2(Test2Request) returns (Test2Response) {}
+}
+
+message Test2Request {
+  int32 test_int_data = 1;
+}
+
+message Test2Response {
+  map <string, string> test_map_data = 1;
+}
