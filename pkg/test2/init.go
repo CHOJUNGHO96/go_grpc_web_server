@@ -8,8 +8,6 @@ import (
 	testUsecase "sequence_game_server/pkg/test2/usecase"
 )
 
-type InitFunc func(*dbInstance.PostgresDB)
-
 func InitService(db *dbInstance.PostgresDB) {
 	// DB와 연결된 repository 생성
 	repo := testRepository.NewRepository(db)
