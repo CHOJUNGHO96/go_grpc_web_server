@@ -1,3 +1,3 @@
 package config
 
-const Config = "./core/config/"
+const Config = "./conf"

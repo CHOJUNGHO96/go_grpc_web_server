@@ -1,0 +1,2 @@
+# /cmd/conf 는 직접 main.go 실행할때 config 파일 가져오기위함
+cmd/conf
