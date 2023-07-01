@@ -1,9 +1,0 @@
-{
-  "postgres_information": {
-    "database_id": "postgres",
-    "database_ip": "localhost",
-    "database_name": "postgres",
-    "database_password": "qhdks12#",
-    "database_port": 5432
-  }
-}
