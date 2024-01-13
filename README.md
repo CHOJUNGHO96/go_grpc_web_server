@@ -1,2 +1,2 @@
-# grpc_web_server
-GRPC를 이용한 서버구축
+# go_grpc_web_server
+GO언어를 사용한 GRPC 서버구축
